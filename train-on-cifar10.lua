@@ -174,7 +174,7 @@ function train(dataset)
     confusion:zero()
 
     -- Save/log current network
-    local filename = paths.concat(opt.save, 'mnist.net')
+    local filename = paths.concat(opt.save, 'cifar10.net')
     os.execute('mkdir -p ' .. sys.dirname(filename))
     if paths.filep(filename) then
         os.execute('mv ' .. filename .. ' ' .. filename .. '.old')

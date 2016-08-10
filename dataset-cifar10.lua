@@ -18,7 +18,7 @@ function cifar10.download()
         flag = true
     end
 
-    if floag then
+    if flag then
         local remote = cifar10.path_remote
         local tar = paths.basename(remote)
         os.execute('wget ' .. remote)
